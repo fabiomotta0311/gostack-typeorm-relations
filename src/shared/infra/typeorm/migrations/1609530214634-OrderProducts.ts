@@ -19,7 +19,7 @@ export default class OrderProducts1609530214634 implements MigrationInterface {
             isNullable: false,
           },
           {
-            name: 'order_products',
+            name: 'order_id',
             type: 'uuid',
             isNullable: true,
           },

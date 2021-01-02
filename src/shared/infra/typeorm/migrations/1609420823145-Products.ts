@@ -52,7 +52,7 @@ export default class Products1609420823145 implements MigrationInterface {
       }),
     );
     await queryRunner.createForeignKey(
-      'aorder_products',
+      'order_products',
       new TableForeignKey({
         name: 'ProductOrder',
         columnNames: ['order_products'],
