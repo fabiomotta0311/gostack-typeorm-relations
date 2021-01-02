@@ -14,9 +14,14 @@ export default class OrderProducts1609530214634 implements MigrationInterface {
             default: 'uuid_generate_v4()',
           },
           {
-            name: 'name',
-            type: 'varchar',
+            name: 'product_id',
+            type: 'uuid',
             isNullable: false,
+          },
+          {
+            name: 'order_products',
+            type: 'uuid',
+            isNullable: true,
           },
           {
             name: 'price',
@@ -28,11 +33,7 @@ export default class OrderProducts1609530214634 implements MigrationInterface {
             type: 'varchar',
             isNullable: false,
           },
-          {
-            name: 'order_products',
-            type: 'uuid',
-            isNullable: true,
-          },
+
           {
             name: 'created_at',
             type: 'timestamp',
