@@ -19,28 +19,6 @@ export default class Orders1609530183018 implements MigrationInterface {
             default: 'uuid_generate_v4()',
           },
           {
-            name: 'name',
-            type: 'varchar',
-            isNullable: false,
-          },
-          {
-            name: 'price',
-            type: 'decimal',
-            precision: 2,
-            scale: 2,
-            isNullable: false,
-          },
-          {
-            name: 'quantity',
-            type: 'varchar',
-            isNullable: false,
-          },
-          {
-            name: 'order_products',
-            type: 'uuid',
-            isNullable: true,
-          },
-          {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()',

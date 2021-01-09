@@ -25,12 +25,14 @@ export default class Products1609420823145 implements MigrationInterface {
           },
           {
             name: 'price',
-            type: 'float',
+            type: 'decimal',
+            precision: 1000000,
+            scale: 2,
             isNullable: false,
           },
           {
             name: 'quantity',
-            type: 'varchar',
+            type: 'int',
             isNullable: false,
           },
           {
